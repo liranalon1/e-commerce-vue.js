@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+[v-cloak] {display:none;}
+
+body{font-family: 'Lato', sans-serif;background: #f3f2f2;font-size: 16px;}
+
+/* Global style */
+.flex { display:flex }
+.flex.flex-column { flex-direction: column; }
+.flex.flex-row { flex-direction: row; }
+.flex.space-between{ justify-content: space-between; }
+.flex.justify-center { justify-content: center; }
+.flex.justify-left { justify-content: flex-start; }
+.flex.justify-right { justify-content: flex-end; }
+.flex.align-center { align-items: center; }
+.flex.align-left { align-items: flex-start; }
+.flex.align-right { align-items: flex-end; }
+
+.btn{ padding: 0.375rem 0.75rem; cursor: pointer; font-size: 0.875rem; text-align: center; border-radius: 5px;font-weight: 700;outline: none;}
+
+.btn-success,
+.btn-success:focus,
+.btn-success:active {color: #fff;background-color: #31b3a4;border:none;outline: none;}
+.btn-success:hover,
+.btn-success[disabled]:hover,
+.btn-success:active:focus {background-color: #2ba193;}
+
+.btn-danger,
+.btn-danger:focus,
+.btn-danger:active { color: #fff; background-color: #d9534f; border-color: #d43f3a; }
+.btn-danger:hover,
+.btn-danger[disabled]:hover,
+.btn-danger:active:focus {background-color: #c9302c;border-color: #ac2925;}
+
+.btn[disabled]{opacity: .65;cursor: not-allowed;}
+
+.btn-primary {color: #fff;background-color: #FFC107;}
+.btn-primary:hover {background-color: #efb508;}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1.25rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+}
+
+.table>tbody>tr{
+    border-top: 1px solid #ddd;
+}
+
+.table>tbody>tr>td, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th {
+    padding: 0.5rem;
+    line-height: 1.42857143;
+}
+
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+
+.table>thead:first-child>tr:first-child>th{
+    border-top: 0; 
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f5f3f3;
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0 0.9375rem;
+    margin: 0 auto;
+}
+
+/* Animation (pulse) */
+@keyframes pulse { 0% {transform: scale(0.90);} 50% {transform: scale(1);} 100% {transform: scale(0.90);} }
+@-webkit-keyframes pulse { 0% {-webkit-transform: scale(0.90);} 50% {-webkit-transform: scale(1);} 100% {-webkit-transform: scale(0.90);} }
+
+@media (max-width: 480px) {
+    body {font-size: 14px;}
+    .container { width: 100%; }
+}
